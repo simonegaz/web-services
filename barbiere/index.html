@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barber Style - Demo</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    background:url('https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=1400&q=80');
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    padding:100px 20px;
+}
+
+header h1{
+    font-size:42px;
+    background:rgba(0,0,0,0.6);
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:10px;
+}
+
+section{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.button{
+    display:inline-block;
+    padding:12px 20px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    margin-top:10px;
+    cursor:pointer;
+}
+
+.service{
+    display:flex;
+    justify-content:space-between;
+    border-bottom:1px solid #334155;
+    padding:10px 0;
+}
+
+input, select{
+    width:100%;
+    padding:10px;
+    margin-top:8px;
+    margin-bottom:15px;
+    border-radius:6px;
+    border:none;
+}
+
+footer{
+    background:#1e293b;
+    text-align:center;
+    padding:30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>💈 Barber Style</h1>
+    <p>Tagli moderni e classici per ogni stile</p>
+    <br>
+    <a class="button" href="#prenota">Prenota ora</a>
+</header>
+
+<section>
+
+<div class="card">
+<h2>Chi siamo</h2>
+<p>
+Barber Style è un barbiere moderno che unisce stile classico e nuove tendenze.
+Cura del dettaglio e attenzione al cliente sono la nostra priorità.
+</p>
+</div>
+
+<div class="card">
+<h2>✂️ Servizi</h2>
+
+<div class="service">
+<span>Taglio Uomo</span>
+<span>€15</span>
+</div>
+
+<div class="service">
+<span>Barba</span>
+<span>€10</span>
+</div>
+
+<div class="service">
+<span>Taglio + Barba</span>
+<span>€22</span>
+</div>
+
+<div class="service">
+<span>Skin Fade</span>
+<span>€18</span>
+</div>
+
+</div>
+
+<div class="card" id="prenota">
+<h2>📅 Prenota appuntamento</h2>
+
+<form onsubmit="return confermaPrenotazione()">
+
+<label>Nome</label>
+<input type="text" required>
+
+<label>Servizio</label>
+<select>
+  <option>Taglio Uomo</option>
+  <option>Barba</option>
+  <option>Taglio + Barba</option>
+  <option>Skin Fade</option>
+</select>
+
+<label>Giorno</label>
+<input type="date" required>
+
+<label>Ora</label>
+<input type="time" required>
+
+<button class="button" type="submit">Conferma prenotazione</button>
+
+</form>
+
+<p id="msg"></p>
+</div>
+
+<div class="card">
+<h2>📍 Dove siamo</h2>
+<p>Via Roma 25, Italia</p>
+<p>Aperto: Lun - Sab | 09:00 - 19:00</p>
+</div>
+
+</section>
+
+<footer>
+<p>Demo progetto realizzato da Simone - Web Developer Junior</p>
+</footer>
+
+<script>
+function confermaPrenotazione(){
+    document.getElementById("msg").innerHTML =
+    "✅ Prenotazione inviata! Ti contatteremo a breve.";
+
+    return false;
+}
+</script>
+
+</body>
+</html>
