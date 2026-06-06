@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pizza Napoli - Demo</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    background:url('https://images.unsplash.com/photo-1601924582970-9238bcb495d9?auto=format&fit=crop&w=1400&q=80');
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    padding:100px 20px;
+}
+
+header h1{
+    font-size:40px;
+    background:rgba(0,0,0,0.6);
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:10px;
+}
+
+section{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.button{
+    display:inline-block;
+    padding:12px 20px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.menu-item{
+    display:flex;
+    justify-content:space-between;
+    border-bottom:1px solid #334155;
+    padding:10px 0;
+}
+
+footer{
+    background:#1e293b;
+    text-align:center;
+    padding:30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>🍕 Pizzeria Napoli</h1>
+    <p>La vera pizza italiana fatta con passione</p>
+    <br>
+    <a class="button" href="#menu">Vedi il menù</a>
+</header>
+
+<section>
+    <div class="card">
+        <h2>Chi siamo</h2>
+        <p>
+            Siamo una pizzeria a conduzione familiare che porta la tradizione napoletana
+            direttamente sulla tua tavola. Ingredienti freschi e impasto artigianale.
+        </p>
+    </div>
+
+    <div class="card" id="menu">
+        <h2>🍽️ Menù</h2>
+
+        <div class="menu-item">
+            <span>Margherita</span>
+            <span>€5</span>
+        </div>
+
+        <div class="menu-item">
+            <span>Diavola</span>
+            <span>€6</span>
+        </div>
+
+        <div class="menu-item">
+            <span>Quattro Formaggi</span>
+            <span>€7</span>
+        </div>
+
+        <div class="menu-item">
+            <span>Capricciosa</span>
+            <span>€7</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>📍 Dove siamo</h2>
+        <p>Via Roma 12, Italia</p>
+        <p>Aperto tutti i giorni 18:00 - 23:30</p>
+    </div>
+
+    <div class="card">
+        <h2>📞 Contatti</h2>
+        <p>Telefono: 123 456 789</p>
+        <p>Email: pizzeria@example.com</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>Demo progetto realizzato da Simone - Web Developer Junior</p>
+</footer>
+
+</body>
+</html>
